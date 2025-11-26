@@ -50,4 +50,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@4006f663ecaf1f8093e8e4abb9227f6041f52216
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}   # Generate a token on Sonarcloud.io, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
-       
+        with:
+          organization: sam-u1   # Substitua pelo nome da sua organização no SonarCloud
+          projectKey: sam-u1_Loja2          # Substitua pela chave do projeto no SonarCloud
+          
